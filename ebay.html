@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAY</title>
+    <link rel="stylesheet" href="ebay.css">
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="form-control">
+             <ul>
+                <li>Hi!</li>
+                <li class="l1"><a href="">Signin</a> or <a href="">register</a></li>
+                <li class="l1">Daily Deals</li>
+                <li class="l1">Brand Outlet</li>
+                <li class="l1">Gift Cards</li>
+                <li class="l1">Help & Contact</li>
+                <li class="l2">Sell</li>
+                <li class="dropdown l3">
+                    Watchlist <b>˅</b>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="dropdown l3">
+                    My Ebay <b>˅</b>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li><i class="fa-regular fa-bell l3"></i></li>
+                <li><i class="fa-solid fa-cart-shopping l3"></i></li>
+            </ul> 
+        </nav>
+    </header>
+    <section>
+        <nav class="form-control">
+        <ul>
+            <li><img src="./img/download (1).png" width="110px" alt=""></li>
+            <li class="dropdown l3">
+                Shop by<br>Category
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>&nbsp;
+            <li class="text-align  mt-3"><b>˅</b></li>
+            <li class="mt-3 l4 w-50"><input class="search-input " type="search" placeholder="&#xf002; Search" aria-label="Search"></li>
+            <li class="dropdown l5 mt-3">
+                <input type="text" placeholder="All categories ˅">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>&nbsp;
+            <li><button class="btn btn-primary mt-3 ml-2 l5" type="submit"> Search</button></li>
+            <li class="mt-3 l5">Advanced</li>
+        </ul>
+    </nav>
+    </section>
+    <pre>Saved    Motors   Electronics   Collections   Home & Garden   Fashion   Toys   Sporting   Goods   Buisness & Industrial   Jewellerty & Watches   eBay Live    Refurbished</pre>
+
+    <div id="carouselExampleInterval" class="carousel slide form-control p-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/4.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+  
+  <div class="row r2  m-5 bg-dark">
+    <div class="co text-light pt-3"><h4>Fits your ride, every time <span id="but"><button class="btn btn-primary mt-3 ml-2 l5" type="submit"> shop now</button></span></h4></div>
+    <div class="co text-light"><h6>Get the right parts or your money back</h6></div>
+</div>
+
+<div class="row r3 m-5">
+  <h4>score these trending kicks</h4><br><br><br><br>
+  <div class="col-2 round">
+    <img src="./img/s1.png" class="rounded-circle border border-1 border-dark shadow" alt="" width="200px" height="200px">
+    <h6 class="hh6">model 1</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/s2.png" alt="" class="rounded-circle border border-1 border-dark shadow"  width="200px" height="200px">
+    <h6 class="hh6">model 2</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/s3.png" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+    <h6 class="hh6">model 3</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/s4.png" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+    <h6 class="hh6">model 4</h6>
+</div>
+<div class="col-2 round">
+  <img src="./img/s5.png" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+  <h6 class="hh6">model 5</h6>
+</div>
+<div class="col-2 round">
+  <img src="./img/s6.png" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+  <h6 class="hh6">model 6</h6>
+</div>
+</div>
+
+<div class="row r3 m-5">
+  <h4>set the scene for summer days</h4><br><br><br><br>
+  <div class="col-2 round">
+    <img src="./img/f1.webp" class="rounded-circle border border-1 border-dark shadow" alt="" width="200px" height="200px">
+    <h6 class="hh6">model 1</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/f2.webp" alt="" class="rounded-circle border border-1 border-dark shadow"  width="200px" height="200px">
+    <h6 class="hh6">model 2</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/f3.webp" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+    <h6 class="hh6">model 3</h6>
+</div>
+<div class="col-2 round">
+    <img src="./img/f4.webp" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+    <h6 class="hh6">model 4</h6>
+</div>
+<div class="col-2 round">
+  <img src="./img/f5.webp" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+  <h6 class="hh6">model 5</h6>
+</div>
+<div class="col-2 round">
+  <img src="./img/f6.webp" alt="" class="rounded-circle border border-1 border-dark shadow" width="200px" height="200px">
+  <h6 class="hh6">model 6</h6>
+</div>
+</div><br><br>
+
+<div class="r4 d-flex m-5">
+  <div class="col-2 coll"><img src="./img/e1.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+  <div class="col-2 coll"><img src="./img/e2.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+  <div class="col-2 coll"><img src="./img/e3.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+  <div class="col-2 coll"><img src="./img/e4.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+  <div class="col-2 coll"><img src="./img/e5.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+  <div class="col-2 coll"><img src="./img/e6.webp" height="200px" width="200px" alt=""><h5 class="hh7">product 1 <br>$199</h5></div>
+</div>
+
+<div class="row r5  m-5 "><img src="./img/b2.png" alt=""></div>
+<div class="row r5  m-5 "><img src="./img/b3.png" alt=""></div>
+<div class="row r5  m-5 "><img src="./img/b4.png" alt=""></div>
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-2">
+              <h5>Buy</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">Registration</li>
+                  <li class="nav-item">Bidding & Buying Help</li>
+                  <li class="nav-item">Stores</li>
+                  <li class="nav-item">eBay for Charity</li>
+                  <li class="nav-item">Seasonal Sales and events</li>
+                  <li class="nav-item">eBay Gift Cards</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <h5>Sell</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">Start Selling</li>
+                  <li class="nav-item">How to Sell</li>
+                  <li class="nav-item">Business Sellers</li>
+                  <li class="nav-item">Affiliates</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <h5>Tools & Apps</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">Developers</li>
+                  <li class="nav-item">Security Center</li>
+                  <li class="nav-item">Site Map</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <h5>eBay Companies</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">TCGplayer</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <h5>Stay Connected</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">Facebook</li>
+                  <li class="nav-item">Twitter</li>
+              </ul>
+          </div>
+          <div class="col-md-2">
+              <h5>About eBay</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">Company Info</li>
+                  <li class="nav-item">News</li>
+                  <li class="nav-item">Investors</li>
+                  <li class="nav-item">Careers</li>
+                  <li class="nav-item">Diversity & Inclusion</li>
+                  <li class="nav-item">Global Impact</li>
+              </ul>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col text-center">
+              <p>&copy; 1995-2024 eBay Inc. All Rights Reserved. 
+                  Accessibility, 
+                  User Agreement, 
+                  Privacy, 
+                  Payments Terms of Use, 
+                  Cookies, 
+                  CA Privacy Notice, 
+                  Your Privacy Choices and 
+                  AdChoice
+              </p>
+          </div>
+      </div>
+  </div>
+</footer>
+  
+
+</body>
+</html>
